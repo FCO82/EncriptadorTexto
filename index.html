@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <img class="logo" src="./Img/Logo.png" alt="Logo">
+</header>
+<main class="presentacion">
+
+    <div class="nota">
+       <!-- <input class="input__text" type="text" placeholder="Ingrese el texto aqui">-->
+        <div>
+        <h6 class="texto__parrafo"></h6>
+        </div>
+        <textarea id="texto" class="text__area" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+
+        <div class="img__p">
+            <img class="exclamation__img" src="./Img/exclamation.png">
+            <p class="nota__p">Solo letras minúsculas y sin acentos</p>
+        </div>
+        <div class="button">
+        <button class="button__encriptar" onclick=encriptar()>Encriptar</button>
+        <button class="button_desencriptar" onclick=desencriptar()>Desenciptar</button>
+    </div>
+    </div>
+    <div class="resultado">
+        <img class="muñeco" src="./Img/Muñeco.png" alt="" id="muneco">
+        <div class="div__text1">
+            <p class="text__desc_muñeco" id="titulo">Ningún mensaje fue encontrado</p>
+        </div>
+        <div class="div__text__dos">
+            <p class="text__desc_muñeco__dos" id="parrafo">Ingresa el texto que deseas encriptar o desencriptar.</p>
+        </div>
+       <!-- <h2 class="texto__cifrado" > hola</h2>-->
+        <div id="caja" style="display: none">
+        <textarea id="encriptado" class="text__area__encriptado" cols="30" rows="10" ></textarea>
+        </div>
+        <div id="copy1" style="display: none">
+            <button class="button__copy" id="copy" onclick=copy()>Copy</button>
+        </div>
+
+    </div>
+
+</main>
+<footer>
+<div>
+    <span class="nombre">FRANCISCO JAVIER MIRELES HERRERA</span>
+    <span class="nombre">-2024</span>
+</div>
+</footer>
+<script src="app.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>
+
